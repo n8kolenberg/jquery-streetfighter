@@ -13,13 +13,6 @@ body {
 
 }
 
-.hide {
-	display: none;
-}
-
-.show {
-	display: block;
-}
 
 .ryu {
 	float: left;
@@ -73,8 +66,16 @@ body {
 
 
 
+/*Dry Classes
+==================*/
 
+.hide {
+	display: none;
+}
 
+.show {
+	display: block;
+}
 
 
 
