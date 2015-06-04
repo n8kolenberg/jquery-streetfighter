@@ -25,7 +25,11 @@ $('.ryu').mousedown(function(){
 	//ryu throws hadouken next
 	$('.ryu-throwing').show(); 
 	//play sound
-	$('.hadouken').show();
+	$('.hadouken').finish().show().animate({left : "+=720px"}, 500, function(){
+		$(this).hide();
+		$(this).css({left : "520px"});
+	}); //End hadouken animate
+
 	//animate hadouken to right of screen
 	console.log("Mousedown");
 }) //End mousedown 
