@@ -3,7 +3,8 @@ body {
 }
 
 .main{
-	background-color: white;
+	background-color: rgba(236, 236, 236, 0.8);
+	background-blend-mode: screen;
 	height: 500px;
 	margin-top: 110px;
 	padding-left: 100px;
@@ -13,6 +14,22 @@ body {
 
 }
 
+#how-to,
+.streetfighter-logo {
+	position: absolute;
+	top: 5%;
+	right: 0;
+	bottom: 0;
+	left: 50%;
+	max-width: 310px;
+	mix-blend-mode: darken;
+	color: #F30000;
+	text-shadow: 2px 2px 1px darkgrey;
+	font-family: Courier, Helvetica, sans-serif;
+	font-size: 1.5rem;
+	text-align: justify;
+	display: none;
+}
 
 .ryu {
 	float: left;
@@ -85,14 +102,22 @@ body {
 }
 
 
-
-
-
-
-
-
-
-
+/*Background video
+==================*/
+video#bgvid {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -100;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+	background: url('../images/sky.png') no-repeat;
+	background-size: cover;
+}
 
 
 

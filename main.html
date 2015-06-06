@@ -10,11 +10,18 @@
 	<script src="js/app.js"></script>
 </head>
 <body>
-	<div class="main">
-	<video autoplay loop poster="#" id="bgvid">
-		<source src="#" type="video/mp4">
+	<video autoplay loop poster="images/sky.png" id="bgvid">
+		<source src="video/sky.mp4" type="video/mp4">
 	</video>
 
+	<div class="main">
+		<div id="how-to">
+			<p>Click on Ryu to make him throw a Hadouken</p>
+			<p>Press and hold X to make him strike his cool pose!</p>
+		</div>
+		<div class="streetfighter-logo">
+			<img src="images/streetfighter.png" alt="Streetfighter logo">
+		</div>
 		<div class="ryu">
 			<div class="ryu-still ryu-all"></div>
 			<div class="ryu-ready ryu-all"></div>
@@ -30,6 +37,8 @@
 	<audio src="sound/hadouken.mp3" id="hadouken-sound">
 	</audio>
 	<audio src="sound/cool.mp3" id="cool">
+	</audio>
+	<audio src="sound/bad.mp3" id="intro-theme">
 	</audio>
 </body>
 </html>
