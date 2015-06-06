@@ -11,10 +11,15 @@
 </head>
 <body>
 	<div class="main">
+	<video autoplay loop poster="#" id="bgvid">
+		<source src="#" type="video/mp4">
+	</video>
+
 		<div class="ryu">
-			<div class="ryu-still"></div>
-			<div class="ryu-ready"></div>
-			<div class="ryu-throwing"></div>
+			<div class="ryu-still ryu-all"></div>
+			<div class="ryu-ready ryu-all"></div>
+			<div class="ryu-throwing ryu-all"></div>
+			<div class="ryu-cool ryu-all"></div>
 		</div>
 
 		<div class="hadouken">
@@ -22,6 +27,9 @@
 		</div>
 
 	</div>
-
+	<audio src="sound/hadouken.mp3" id="hadouken-sound">
+	</audio>
+	<audio src="sound/cool.mp3" id="cool">
+	</audio>
 </body>
 </html>
